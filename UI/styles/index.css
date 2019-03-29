@@ -1,0 +1,731 @@
+body{
+	font: 15px/1.5 Arial, Comic Sans MS, Garamond, sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color: #172A3A
+}
+
+/* Global */
+textarea {
+	width: 300px;
+	margin: 10px 0;
+	height: 50px;
+	border: 1px solid magenta;
+	outline: none;
+	display: block;
+	background-color: #F8F8FF;
+}
+
+table{
+	margin: 20px auto;
+	border-collapse: collapse;
+}
+th,td{
+	border: 2px solid #FF7F50;
+	text-align: left;
+	padding: 10px 27px;
+}
+select{
+	width: 200px;
+	height: 30px;
+	padding: 0 0 0 10px;
+	border: 1px solid magenta;
+	outline: none;
+	border-radius: 3px;
+	background-color: #F8F8FF;
+}
+
+.container{
+	width: 80%;
+	margin:auto;
+	overflow: hidden;
+}
+
+.content{
+	padding: 0;
+	margin: 0;
+	min-height: 487px;
+	text-align: center; 
+	width: 100%;
+}
+
+.authInput, .authBtn{
+	border-radius: 6px;
+	margin: 5px 0;
+	display: block;
+}
+.authInput{
+	min-width: 300px;
+	min-height: 25px;
+	padding:4px;
+	border: 1px solid magenta;
+	outline: none;
+	border-radius: 6px;
+	background-color: #F8F8FF;
+}
+
+.authBtn{
+	width: 310px;
+	min-height: 33px;
+	background-color: #09BC8A;
+	border: none;
+	color: #FFFAFA;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.authBtn:hover{
+	background-color: #05674c;
+}
+
+.authForm{
+	margin-top: 100px;
+	margin:100px auto 5px auto;
+	width: 60%;
+}
+
+.authForm h1{
+	margin: 20px auto 0 auto;
+	padding: 10px 0;
+	display: block;
+	color: #191818;
+	text-transform: uppercase;
+	font-size: 28px;
+}
+
+.pop-up{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.4);
+	transition: opacity 100ms;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.pop-up:target{
+	visibility: visible;
+	opacity: 1;
+}
+
+.pop-upBody{
+	background-color: white;
+	margin: 20px auto;
+	padding: 15px 22px;
+	border-radius: 10px;
+	width: 35%;
+	box-sizing: border-box;
+	position: relative;
+	transition: all 2s ease-out;
+}
+
+.pop-upBody div h3+form{
+	margin: auto;
+	text-align: center;
+	width: 60%;
+}
+
+.closePop-up{
+	position: absolute;
+	top: -15px;
+	right: -5px;
+	font-size: 30px;
+	font-weight: bolder;
+	color: #00000f;
+}
+
+.closePop-up:hover{
+	color: blue;
+	text-decoration: none;
+}
+
+.normal-link{
+	color: blue;
+	font-size: 13px;
+}
+
+.normal-link-user{
+	color: blue;
+	font-size: 18px;
+	text-align: center;
+}
+
+.normal-link:hover{
+	text-decoration: underline;
+}
+
+.normal-link-user:hover{
+	text-decoration: underline;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+/* Header */
+header{
+	color: white;
+	padding-top: 30px;
+	min-height: 60px;
+	border-bottom: 3px solid #09BC8A; 
+}
+
+header nav{
+	float: right;
+	margin-top: 15px;
+}
+
+header nav a{
+	font-family: Georgia;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+header li{
+	float: left;
+	display: inline;
+	padding: 0 15px;
+}
+
+header #brand{
+	float: left;
+
+}
+
+header #brand img{
+	width: 30px;
+	height: 30px;
+}
+
+header #brand h1{
+	display: inline;
+	font-family: Comic Sans MS;
+}
+
+header .current{
+	border-top: 3px solid #09BC8A;
+	background-color: rgba(255,255,255,0.2);
+	color:#e8491d;
+}
+
+.current-tab{
+	background-color: #75DDDD;
+}
+
+header nav a:hover{
+  color:#0074e1;
+  font-weight:bolder;
+}
+
+
+/*** Section ***/
+
+/*landing-img-section*/
+#landing-img-section{
+	min-height: 487px;
+	background: url('../images/background3.jpg') no-repeat 0 -200px;
+	background-size: cover;
+	text-align: center; 
+	font-size: 20px;
+	color: #FF7F11;
+	font-weight: bold;
+	box-sizing: border-box;
+}
+
+#landing-img-section h3{
+	font-size: 50px;
+	color: rgba(0,0,0,0.8);
+	margin-top: 100px;
+	margin-bottom: 10px;
+	text-transform: capitalize;
+}
+
+/* Other-Links */
+#other-links{
+	background-color: #004346;
+}
+
+#other-links .box{
+	display: inline-block;
+	width: 19%;
+	min-height: 30px;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#other-links .box:hover{
+	background-color: #09BC8A;
+	font-weight: bold;
+}
+
+/* landing-img2 */
+#landing-img2{
+	min-height: 490px;
+	background: url('../images/background2.jpg') no-repeat 0 -200px;
+	background-size: cover;
+	text-align: center;
+	font-size: 20px;
+	color: #FF7F11;
+	font-weight: bold;
+}
+#landing-img2 h3{
+	font-size: 40px;
+	color: #000;
+	margin-top: 100px;
+	margin-bottom: 10px;
+}
+
+/* Content */
+.content aside, .content #half-background {
+		display: inline;
+		min-height: 490px;
+}
+.content aside {
+	background-color: #fff; 
+	width: 40%;
+	float: right;
+}
+
+.content #half-background{
+	background: url('../images/background1.jpg') no-repeat 0 -200px;
+	width: 60%;
+	float: left;
+}
+
+
+/* dashboard */
+.dashboard aside{
+	width: 18%;
+	background-color: #09BC8A;
+}
+
+.dashboard{
+	height: 100%;
+	background-color: #75DDDD;
+}
+
+#dashboard-background{
+	background: url('../images/background4.jpg') no-repeat 0 -300px;
+}
+
+#dashboard-content{
+	width: 82%;
+	margin: 10px auto;
+	float: left;
+}
+
+#usertype{
+	font-size: 15px;
+	color: 
+}
+
+/*Profile Picture*/
+
+.profilePic img{
+	width: 130px;
+	padding: 0;
+	margin: 20px auto 10px; auto;
+	border-radius: 100px;
+	display: block;
+}
+
+.profilePic p{
+	text-transform: uppercase;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 19px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	color: #004346;
+}
+
+.profilePic p:first-child{
+	margin-top: 30px;
+	font-size: 22px;
+	color: #000;
+}
+
+.profilePic p:last-child{
+	color: #508991;
+}
+
+
+#accountDetails p{
+	margin: 10px auto;
+}
+
+#accountDetails{
+	width: 82%;
+	margin: 10px auto
+}
+
+/* eachDetail */
+.eachDetail{
+	padding: 15px 10px 0 10px;
+	border: 2px solid magenta;
+	border-radius: 5px;
+	height: 40px;
+	min-width: 400px;
+	display: block;
+	text-align: left;
+}
+.eachDetail span{
+	float: right;
+}
+
+/*Create Account*/
+#createAccountContainer{
+	background-color: #75DDDD;
+	min-height: 500px
+}
+
+.update h1{
+	width: 100%;
+	background-color: #172A3A;
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+}
+
+.secA{
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #ffffff;
+	margin: 10px auto;
+	width: 97%;
+	padding-left: 20px;
+
+}
+
+.secA h3{
+	width: 200px;
+}
+
+.secB{
+	margin-left: 40px;
+	width: 80%;
+}
+
+.secB1-1 p{
+	display: block;
+}
+
+.secB1-1 p *{
+	display: inline;
+}
+
+.secB1-1 p label{
+	min-width: 150px;
+	display: inline-block;
+}
+
+.secB p label{
+	min-width: 150px;
+	display: inline-block;
+}
+
+.secB1{
+	display: inline;
+	margin-top: 20px;
+	width: 30%;
+}
+.secB2{
+	display: inline;
+	margin-top: 20px;
+	width: 80%;
+}
+
+.secB1 input[type=text]{
+	margin-top: 0;
+}
+
+.secB1Custom{
+	font-size: 20px;
+}
+
+.secC{
+	display: inline;
+	float: right;
+	margin-bottom:10px;
+}
+
+#changebtn{
+	width: 180px;
+}
+#createbtn{
+	float: center;
+	width: 180px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* search */
+#searchbtn {
+	width: 100px;
+	margin-right: 150px;
+	margin-left: 20px;
+}
+.search *{
+	display: inline-block;
+}
+
+.search{
+	float: right;
+}
+
+/* tab-admin */
+#admin{
+	background-color: #172A3A;
+}
+#tab-admin{
+	width:49%
+}
+
+.tab-tran-acc{
+	width: 99%;
+	display: inline-block;
+	font-family: Georgia;
+	font-weight: bold;
+	font-size: 20px;
+	text-transform: uppercase;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.tab-admin{
+	display: inline-block;
+	width: 27.1%;
+	font-family: Georgia;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+/* Bank Account Page */
+
+#bankAccbtn, #bankAccClosebtn{
+	width: 180px;
+}
+#bankAccClosebtn{
+	float: right;
+	margin-right: 12%;
+}
+.transactionForm{
+	margin: 0 auto;
+	width: 75%;
+}
+
+.transactionForm form div{
+	margin: 0 auto;
+	justify-content: space-between;
+	width: 30%;
+	display: flex;
+}
+
+
+.bankAccForm p label, #transactionContainer label{
+	font-size: 22px;
+}
+
+.bankAccForm p{
+	min-width: 40%
+	margin:0 auto;
+}
+
+.bankAccForm .authInput{
+	padding-left: 10px;
+    margin: 5px auto;
+}
+
+#transactionContainer .authInput, #transactionContainer form * {
+	display: inline;
+}
+
+#transactionContainer .authInput{
+	margin-left: 10px;
+} 
+
+#btn-s{
+	margin-left: 20px;
+   	width: 180px;
+}
+
+#accInfo span{
+	width: 150px;
+}
+
+#accInfo{
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+#accountInformation{
+	display: flex;
+	font-size: 20px;
+	width: 80%;
+padding-left: 100px;
+	text-align: left;
+	justify-content: space-between;
+}
+
+#accountInformation form label, #accountInformation form input {
+	display: inline-block;
+}
+
+#accountInformation form div label{
+	min-width: 150px;
+	text-align: right;
+}
+
+#accountInformation h1{
+	margin-top: 5px;
+}
+
+
+#accountInformation button{
+	margin: 0 auto;
+	width: 180px;
+	float: right;
+}
+
+/* Email */
+
+#emailNotification div *{
+	margin: 9px 0 9px 15px;
+}
+
+#strong{
+	font-weight: bolder;
+}
+
+#email-form{
+	margin-right: auto 5px;
+	text-align: left;
+}
+#email-form button{
+	margin: 10px auto 0 auto;
+}
+
+/* Footer */
+
+footer{
+	text-align: center;
+	color: white;
+	padding-top: 20px;
+}
+
+footer img{
+	width: 35px;
+	border-radius: 100px;
+	position: relative;
+}
+
+footer img:hover{
+	top: -3px;
+}
+
+footer a{
+	padding-left: 20px;
+	padding-right: 15px;
+}
+
+footer #footerlinks a:hover{
+	text-decoration: underline;
+}
+
+footer #footerlinks{	
+	padding-bottom: 10px;
+}
+
+.adjust-footer{
+	margin-top:50px;
+	overflow: hidden;
+}
+
+
+@media screen and (max-width: 710px) {
+	#landing-img-section h3{
+		margin-top: 20px;
+	}
+	#landing-img-section{
+		background-position: 0;
+	}	
+	#accountdetails{
+		margin: 0;
+	}
+	.eachDetail{
+		padding: 10px 5px 0 5px;
+		height: 30px;
+		min-width: 300px;
+	}
+}
+@media screen and (max-width: 830px) {
+	#landing-img2{
+		background-position: 0;
+	}
+		#accountInformation{
+			flex-direction: column-reverse;	
+			text-align: center;		
+		}
+
+}
+
+@media screen and (max-width: 720px) {
+	.secB1 input+label{
+		display:inline-block;
+		margin-top: 0;
+		width: 80%;
+	}
+	.secB1{
+		margin-top: 10px;
+	}
+}
+
+@media screen and (max-width: 680px) {
+	#accInfo{
+		float: left;
+	}
+	.dashboard aside{
+		width: 0;
+	}
+	#accountdetails{
+		width: 100%;
+	}
+	#accountInformation form label + #accountInformation form input {
+	display: block;
+}
+	#bankAccbtn{
+		width: 310px;
+	}
+}
+
+@media screen and (max-width: 980px) {
+	th,td{
+		padding: 10px 2px;
+	}
+
+}
+
+@media screen and (max-width: 1300px) {
+	#dashboard-background{
+		background-position: -200px -300px;
+	}
+}
+
+@media screen and (max-width: 860px) {
+	#dashboard-background{
+		background-position: -300px -300px;
+	}
+}
