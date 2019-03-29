@@ -24,7 +24,15 @@
 		<section class="content dashboard" id="dashboard-background">
 			<div>
 				<aside>
-					
+					<div class="profilePic">
+						<a class="normal-link" href="#pop-up6"><img src="images/profile.png" alt="profile" />change picture</a>
+						<div>
+							<p>Welcome,</p>
+							<p>Mr. Riyad Suhg</p>
+						<p id="usertype">Banka Admin</p>
+							
+						</div>
+					</div>
 				</aside>
 				<div id="admin">
 					<div class="tab-admin">
@@ -39,7 +47,24 @@
 						<a href="Users.html">ACTIVATE/DEACTIVATE USER</a>
 					</div>				
 				</div>
-
+				<div id="pop-up6" class="pop-up">
+					<div class="pop-upBody">
+						<span class="pop-upSpan"></span>
+						<div>
+							<a class="closePop-up" href="#">X</a>
+							<div>
+								<h3 class="pop-upH3">CHANGE PICTURE</h3>
+								<form action="#">
+									<div class="changePicture">
+										<img src="images/profile.png" alt="profile" />
+										<input type="file" class="authUpload" id="avatar" name="avatar" accept="image/png, image/jpeg" required>
+									</div>
+									<button id="changebtn" class="authBtn">Submit</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 		<footer>
