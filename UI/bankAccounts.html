@@ -29,6 +29,17 @@
 						<a href="javascript:void(0)">BANK ACCOUNTS</a>
 					</div>		
 				</div>
+				<div id="transactionContainer">
+					<div class="transactionForm">
+						<form action="javascript:void(0);">
+							<p>				
+								<label for="bankAccNum">Search: </label>
+								<input type="number" id="bankAccNum" placeholder="Account Number" name="bankAccNum" required class="authInput" />
+							</p>
+								<button id="bankAccbtn" class="authBtn">Submit</button>
+						</form>
+					</div>
+				</div>
 				<div id="viewAll">
 					<table>
 						<thead>
@@ -76,6 +87,32 @@
 							</tr>
 						</tbody>
 					</table>
+				</div>
+				<div id="viewOne">
+					<table>
+						<thead>
+							<tr>
+								<th>Account ID</th>
+								<th>Account Name</th>
+								<th>Account Type</th>
+								<th>Current Balance</th>
+								<th>Available Balance</th>
+								<th>Status</th>
+								<th>Action</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><span id="updateAccNum"></span></td>
+								<td>David Flush</td>
+								<td>Savings</td>
+								<td>N1,060,000</td>
+								<td>N1,020,000 </td>
+								<td>Dormant</td>
+							</tr>
+						</tbody>
+					</table>
+					<button id="bankAccClosebtn" class="authBtn">Close</button>
 				</div>
 			</div>
 		</section>
